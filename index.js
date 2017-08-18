@@ -208,6 +208,9 @@ function Client(connectionString, options) {
     this.state = State.DISCONNECTED;
 
     this.on('state', defaultStateListener);
+    this.connectionManager.on("error", (error) => {
+        this.emit("error", error);
+    })
 }
 
 util.inherits(Client, events.EventEmitter);

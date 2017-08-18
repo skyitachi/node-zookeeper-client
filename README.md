@@ -621,6 +621,7 @@ which interests you. The following is the list of events that can be watched:
 * `disconnected` - The connection between client and server is dropped.
 * `expired` - The client session is expired.
 * `authenticationFailed` - Failed to authenticate with the server.
+* `error` - Failed connect to zookeeper server.
 
 Note: some events (e.g. `connected` or `disconnected`) maybe be emitted more
 than once during the client life cycle.

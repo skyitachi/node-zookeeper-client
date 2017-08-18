@@ -16,3 +16,6 @@ coverage
 
 node_modules
 npm-debug.log
+
+.history
+**/*.DS_Store
